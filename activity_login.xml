@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".Login"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp"
+            app:srcCompat="@drawable/pic"
+            tools:ignore="ContentDescription,UnusedAttribute" />
+
+        <EditText
+            style="@style/editText_style"
+            android:id="@+id/editText"
+            android:inputType="textEmailAddress"
+            android:hint="Username"
+            tools:ignore="HardcodedText,LabelFor" />
+
+        <EditText
+            style="@style/editText_style"
+            android:id="@+id/editText2"
+            android:inputType="textPassword"
+            android:hint="Password"
+            tools:ignore="HardcodedText,LabelFor" />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cbox"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Remember me!"/>
+
+        <Button
+            android:id="@+id/button"
+            style="@style/btn_style"
+            android:text="@string/login" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:baselineAligned="false"
+            android:layout_marginLeft="64dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/Text"
+            android:textColor="#6F7A8B" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="2dp"
+            style="@style/btn_style"
+
+            android:text="Sign up"
+            android:textColor="#FFFFFF"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

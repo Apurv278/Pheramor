@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "71180853079",
+    "firebase_url": "https://pheramor-4e78e.firebaseio.com",
+    "project_id": "pheramor-4e78e",
+    "storage_bucket": "pheramor-4e78e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:71180853079:android:39eeaccfb29f91be",
+        "android_client_info": {
+          "package_name": "com.pheramore.exApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "71180853079-216fbfnkh3rhfv3ois61nvqarfvoq6io.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH9F2wFapQTJRqLjbev_UHdYA77gwIMK4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

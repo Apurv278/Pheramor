@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".Signup"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:text="@string/signup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:shadowColor="#DFDFEF"
+        tools:ignore="SpUsage" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <EditText
+            style="@style/editText_style"
+            android:id="@+id/name"
+            android:hint="First Name"
+            tools:ignore="HardcodedText,TextFields"/>
+
+        <EditText
+            style="@style/editText_style"
+            android:id="@+id/lname"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            tools:ignore="HardcodedText,TextFields"/>
+
+        <EditText
+            style="@style/editText_style"
+            android:id="@+id/email"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            tools:ignore="HardcodedText,TextFields"/>
+
+        <EditText
+            style="@style/editText_style"
+            android:id="@+id/pwd"
+            android:hint="Password"
+            android:inputType="textPassword"
+            tools:ignore="HardcodedText,TextFields"/>
+
+        <EditText
+            style="@style/editText_style"
+            android:id="@+id/height"
+            android:hint="Height"
+            android:inputType="numberDecimal"
+            tools:ignore="HardcodedText,TextFields"/>
+
+
+
+        <EditText
+            style="@style/editText_style"
+            android:id="@+id/date"
+            android:hint="DOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/genderHead"
+                android:layout_marginTop="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Gender"
+                android:textColor="#FFFFFF" />
+
+            <Spinner
+                android:id="@+id/genderspin"
+                style="@style/editText_style"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:entries="@array/genderArray"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/next"
+            android:layout_margin="2dp"
+            style="@style/btn_style"
+            android:text="Next"
+            android:textColor="#FFFFFF"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+<!--</ScrollView>-->
